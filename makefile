@@ -24,7 +24,9 @@ compile_quicksort:
 
 compile_mmult:
 	$(CC) $(CFLAGS) mmult.c -o mmult_seq.o -lm
-	$(CC) $(CFLAGS) mmult_parallel.c -o mmult_par.o -lm
+	$(CC) $(CFLAGS) mmult_parallel_out_pragma.c -o mmult_par_out_pragma.o -lm
+	$(CC) $(CFLAGS) mmult_parallel_out_pragma_intern_pragma.c -o mmult_par_intern_pragma.o -lm
+
 
 # Regra para limpar os arquivos compilados
 clean:

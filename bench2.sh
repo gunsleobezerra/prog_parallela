@@ -5,7 +5,7 @@ ARQUIVO="bench_quick_sort.txt"
 # roda cada um dos arquivos com  1 , 2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 threads e salva em arquivo bench.txt
 #limpa arquivo bench.txt
 echo "" > $ARQUIVO
-for i in {100..100000000..100000}
+for i in {1..1000..1}
 do
     echo "$i - threads------------" >> $ARQUIVO
     echo "sequential:" >> $ARQUIVO

@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 		
 	// a multiplicação
 	gettimeofday(&start, NULL);
-
+	#pragma omp parallel for 
 	for (i=0; i<tam; i++)
 		for (j=0; j<tam; j++)
 			for (k=0; k<tam; k++)
