@@ -1,0 +1,2 @@
+Lendo arquivo... ok
+Tempo decorrido = 206.434 ms
